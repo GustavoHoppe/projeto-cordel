@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Austria';
+    src: url('fonts/Austria.ttf');
+}
+
+@font-face {
+    font-family: 'Modern';
+    src: url('fonts/ModernSans-Light.otf');
+}
+
+@font-face {
+    font-family: 'Padrao';
+    src: url('fonts/KGPrimaryItalics.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-title: 'Austria';
+    --font-subtitle: 'Modern';
+    --font-padrao: 'Padrao';
+
+    --cor1: #EFEDF3;
+    --cor2: #8B6136;
+    --cor3: #DA9F69;
+    --cor4: #583820;
+    --cor5: #3F3433;
+}
+
+
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: var(--cor4);
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 10vw;
+}
+
+p#subtitle {
+    color: var(--cor1);
+    font-family: var(--font-subtitle);
+    letter-spacing: 4px;
+    font-size: 1.1em;
+    
+}
+
+p#subtitle > strong > a {
+    text-decoration: none;
+    color: var(--cor1);
+    transition: 0.6s;
+}
+
+p#subtitle > strong > a:hover {
+    text-decoration: underline;
+    color: #DA9F69;
+}
+
+p {
+    font-family: var(--font-padrao);
+    font-size: 3.5vw;
+    line-height: 50px;
+}
+
+.pcaixa {
+    color: var(--cor1);
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 5px;
+    display: inline-block;
+}
+
+section {
+    padding:30px;
+}
+
+section#sec1 {
+    background-color: var(--cor2);
+}
+
+section#sec2 {
+    background-image: url('imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.459);
+      
+}
+
+section#sec3 {
+    background-color: var(--cor2);   
+}
+
+section#sec4 {
+    background-image: url('imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px 9px rgba(0, 0, 0, 0.39);
+}
+
+section#sec5 {
+    background-color: var(--cor2);
+}
+
+footer {
+    background-color: black;
+    color: var(--cor4);
+    text-align: center;
+    padding: 40px 0px;
+}
+
+footer > p#pfooter {
+    font-family: var(--font-subtitle);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+footer > p#pfooter > a {
+    text-decoration: none;
+    color: var(--cor1);
+    transition: 0.6s;
+}
+
+footer > p#pfooter > a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+
+
+
